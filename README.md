@@ -103,25 +103,14 @@ index=*
 
 ## Dashboard Preview
 
-Add screenshots here.
+### Full Dashboard
 
-Example:
+![Dashboard Overview](images/dashboard-overview.png)
 
-![Dashboard](images/dashboard.png)
+### Events by Sourcetype
 
----
+![Events by Sourcetype](images/events-by-sourcetype.png)
 
-## Future Improvements
+### Event Trend
 
-- Windows Security Event Logs
-- Sysmon Integration
-- Linux Authentication Logs
-- Threat Detection Alerts
-- Failed Login Dashboard
-- MITRE ATT&CK Mapping
-
----
-
-## Author
-
-Darwin Brown
+![Event Trend](images/event-trend.png)
