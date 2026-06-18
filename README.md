@@ -104,10 +104,13 @@ index=*
 ## Dashboard Preview
 
 ### Dashboard Overview
+
 ![Dashboard Overview](Dashboard%20Overview.png)
 
 ### Event Trend
+
 ![Event Trend](Event%20Trend.png)
 
 ### Recent Events
+
 ![Recent Events](Recent%20Events.png)
