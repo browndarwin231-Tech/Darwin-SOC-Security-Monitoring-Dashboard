@@ -103,14 +103,11 @@ index=*
 
 ## Dashboard Preview
 
-### Full Dashboard
-
-![Dashboard Overview](images/dashboard-overview.png)
-
-### Events by Sourcetype
-
-![Events by Sourcetype](images/events-by-sourcetype.png)
+### Dashboard Overview
+![Dashboard Overview](Dashboard%20Overview.png)
 
 ### Event Trend
+![Event Trend](Event%20Trend.png)
 
-![Event Trend](images/event-trend.png)
+### Recent Events
+![Recent Events](Recent%20Events.png)
