@@ -1,20 +1,20 @@
 # SOC Security Monitoring Dashboard
 
-A beginner-friendly Security Operations Center (SOC) dashboard built with Splunk Cloud.
+A beginner-friendly **Security Operations Center (SOC) dashboard** built with **Splunk Cloud** to monitor, analyze, and visualize security events using **Search Processing Language (SPL)**.
 
-This project demonstrates how security analysts monitor log activity, visualize security events, and investigate systems using Splunk dashboards.
+This project demonstrates core SIEM skills used by SOC analysts, including log analysis, dashboard creation, event monitoring, and data visualization.
 
 ---
 
 ## Dashboard Overview
 
-The dashboard includes:
+This dashboard contains the following security monitoring panels:
 
 - Total Events
 - Events by Sourcetype
 - Top Hosts
-- Event Trend (Last 24 Hours)
-- Events by Splunk Index
+- Event Trend
+- Events by Index
 - Recent Events
 
 ---
@@ -22,10 +22,29 @@ The dashboard includes:
 ## Technologies Used
 
 - Splunk Cloud
-- SPL (Search Processing Language)
-- SIEM Concepts
+- Splunk Search Processing Language (SPL)
+- Security Information and Event Management (SIEM)
 - Log Analysis
+- Security Monitoring
 - Dashboard Visualization
+- Data Analysis
+- Cybersecurity
+
+---
+
+## Skills Demonstrated
+
+- Splunk Dashboard Development
+- SPL Query Writing
+- SIEM Monitoring
+- Security Event Analysis
+- Threat Monitoring
+- Log Investigation
+- Host Analysis
+- Sourcetype Analysis
+- Event Trend Analysis
+- Dashboard Visualization
+- Security Reporting
 
 ---
 
@@ -43,7 +62,7 @@ index=*
 ```spl
 index=*
 | stats count by sourcetype
-| sort - count
+| sort -count
 ```
 
 ### Top Hosts
@@ -51,7 +70,7 @@ index=*
 ```spl
 index=*
 | stats count by host
-| sort - count
+| sort -count
 ```
 
 ### Event Trend
@@ -73,31 +92,8 @@ index=*
 ```spl
 index=*
 | table _time host sourcetype source
-| head 10
+| sort -_time
 ```
-
----
-
-## Skills Demonstrated
-
-- SIEM Monitoring
-- Splunk Dashboard Development
-- SPL Query Writing
-- Security Event Analysis
-- Log Investigation
-- Dashboard Visualization
-- SOC Workflow
-
----
-
-## What I Learned
-
-- Building dashboards in Splunk Cloud
-- Writing SPL searches
-- Monitoring event activity
-- Analyzing hosts and sourcetypes
-- Organizing SOC dashboards
-- Visualizing security data
 
 ---
 
@@ -114,3 +110,40 @@ index=*
 ### Recent Events
 
 ![Recent Events](Recent%20Events.png)
+
+---
+
+## What I Learned
+
+Throughout this project I learned how to:
+
+- Navigate Splunk Cloud
+- Write SPL searches
+- Build SIEM dashboards
+- Analyze log data
+- Monitor hosts and event sources
+- Visualize security information
+- Investigate security events
+- Create dashboard panels
+- Organize security data for analysis
+
+---
+
+## Future Improvements
+
+- Windows Security Event Log Monitoring
+- Sysmon Log Integration
+- Linux Authentication Log Analysis
+- Failed Login Detection
+- Brute Force Detection
+- PowerShell Activity Monitoring
+- Threat Intelligence Integration
+- MITRE ATT&CK Mapping
+- Security Alert Automation
+- Email Notifications
+
+---
+
+## Author
+
+**Darwin Brown**
